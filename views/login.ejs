@@ -1,0 +1,70 @@
+<%- include ('partials/head'); %>
+<title>Login</title>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="container">
+            <!-- Section gauche -->
+            <section class="box-transparent">
+                <div class="container-logo">
+                    <img src="/img/logo3.svg" alt="logo de Skidom">
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, tenetur dolor
+                    voluptates
+                    iste maxime praesentium, ratione dicta, exercitationem odio placeat rem.</p>
+                <div class="oval-box-container">
+                    <div>
+                        <p><span>2,000</span> abonnés</p>
+                    </div>
+                    <div>
+                        <p><span>3,000</span> publications</p>
+                    </div>
+                    <div>
+                        <p><span>400</span> parcours</p>
+                    </div>
+                </div>
+                <button class="btn-secondary body2">
+                    En savoir plus
+                </button>
+            </section>
+            <!-- Section droite -->
+            <section class="box-form">
+                <h3>Se connecter</h3>
+                <hr>
+                <p>Pas encore membre ? <a href="/signup">S'inscrire</a></p>
+                <p>Lorem ipsum dolor sit amet, consectadiscing elit.</p>
+                
+                <form action="/" method="post" class="form">
+                    <div class="input-control">
+                        <label for="email">Courriel</label>
+                        <div class="input-field" id="emailDiv">
+                            <input id="email" type="email" name="email" placeholder="exemple@nomdedomaine.com">
+                            <i class="fa-regular fa-envelope" id="emailIcon">
+                            </i>
+                        </div>
+                        <div class="caption error" id="errorEmail">Adresse courriel invalide</div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="password">Mot de passe</label>
+                        <div class="input-field" id="passwordDiv">
+                            <input id="password" type="password" name="password"
+                                placeholder="Entrez votre mot de passe">
+                            <i class="fa-regular fa-eye-slash" id="passwordIcon"></i>
+                        </div>
+                        <div class="caption error" id="errorPassword">Mot de passe invalide</div>
+
+                        <div class="row">
+                            <a href="">Mot de passe oublié ?</a>
+                            <div class="caption error" id="errorPassword">Mot de passe invalide</div>
+                        </div>
+                    </div>
+                    <button id="validateNewUser" type="submit" class="btn-primary">Se connecter</button>
+                </form>
+            </section>
+        </main>
+    </div>
+<script src="js/login.js"></script>
+</body>   
+</html>
